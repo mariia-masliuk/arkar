@@ -1,0 +1,47 @@
+.header {
+
+  &__content {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: $color_bg;
+    color: $color_white;
+    padding: 0 15px;
+  }
+
+  &__logo {
+    flex: 0 0 105px;
+    font-size: 30px;
+    line-height: 60px;
+    font-family: $secondFont;
+  }
+
+  &__menu {
+    flex: 1 1 auto;
+  }
+}
+
+.menu {
+  &__icon {
+  }
+
+  &__body {
+  }
+
+  &__list {
+    display: flex;
+    justify-content: flex-end;
+    *:not(:last-child){
+      margin-right: 30px;
+    }
+  }
+
+  &__link {
+    color: $color_white;
+    font-size: 16px;
+    line-height: calc(29 / 16 * 100%);
+  }
+}
+.icon-menu {
+}
