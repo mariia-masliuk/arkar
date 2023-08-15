@@ -125,6 +125,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
+  background-color: #000;
   color: #000;
   font-size: 19px;
   font-family: "Julius Sans One", sans-serif;
@@ -148,7 +149,7 @@ body._lock {
   max-width: 1440px;
   margin: 0 auto;
 }
-@media (max-width: 1440px12px) {
+@media (max-width: 1452px) {
   ._container {
     max-width: 970px;
   }
@@ -167,6 +168,7 @@ body._lock {
 
 ._ibg {
   position: relative;
+  z-index: 2;
 }
 ._ibg img {
   position: absolute;
@@ -175,10 +177,11 @@ body._lock {
   top: 0;
   left: 0;
   object-fit: cover;
+  z-index: 1;
 }
 
 /*-----Burger-----*/
-@media (max-width: 479.98px) {
+@media (max-width: 767.98px) {
   .header {
     position: relative;
   }
@@ -294,4 +297,65 @@ body._lock {
   color: #fff;
   font-size: 16px;
   line-height: 181.25%;
+}
+.menu__link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 479.98px) {
+  .promo img {
+    opacity: 0.4;
+  }
+}
+.promo__content {
+  width: 100%;
+  min-height: 500px;
+  position: relative;
+  z-index: 2;
+  padding: 50px 15px;
+}
+.promo__content *:not(:last-child) {
+  margin-bottom: 30px;
+}
+@media (max-width: 767.98px) {
+  .promo__content {
+    padding: 20px 5px;
+    min-height: 300px;
+  }
+}
+.promo__header {
+  color: #fff;
+  font-family: "Judson";
+  font-size: 30px;
+  line-height: 200%;
+  font-weight: 400;
+}
+.promo__info {
+  font-family: "Julius Sans One", sans-serif;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 19px;
+  line-height: 152.6315789474%;
+}
+@media (max-width: 479.98px) {
+  .promo__info {
+    color: rgba(255, 255, 255, 0.9);
+  }
+}
+.promo__btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  min-width: 210px;
+  font-family: "Judson";
+  font-size: 19px;
+  line-height: 152.6315789474%;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #ababab;
+  transition: all 0.3s ease 0s;
+}
+.promo__btn:hover {
+  background-color: #929292;
 }

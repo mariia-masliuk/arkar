@@ -41,6 +41,9 @@
     color: $color_white;
     font-size: 16px;
     line-height: calc(29 / 16 * 100%);
+    &:hover{
+      text-decoration: underline;
+    }
   }
 }
 .icon-menu {

@@ -1,0 +1,64 @@
+.promo {
+    img{
+      @media(max-width: $md4){
+        opacity: 0.4;
+      }
+    }
+
+
+  &__content {
+    width: 100%;
+    min-height: 500px;
+    position: relative;
+    z-index: 2;
+    padding: 50px 15px;
+    *:not(:last-child){
+      margin-bottom: 30px;
+    }
+    @media(max-width: $md3){
+      padding: 20px 5px;
+      min-height: 300px;
+    }
+
+  }
+
+  &__header {
+    color: $color_white;
+    font-family: $secondFont;
+    font-size: 30px;
+    line-height: calc(60 / 30 * 100%);
+    font-weight: 400;
+
+  }
+
+  &__info {
+    font-family: $mainFont;
+    color: rgba(255, 255, 255, .5);
+
+    font-size: 19px;
+    line-height: calc(29 / 19 * 100%);
+    @media(max-width: $md4){
+      color: rgba(255, 255, 255, .9);
+
+    }
+  }
+
+  &__btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    min-width: 210px;
+    font-family: $secondFont;
+    font-size: 19px;
+    line-height: calc(29 / 19 * 100%);
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: $color_light;
+    transition: all 0.3s ease 0s;
+    &:hover{
+      background-color: darken($color: $color_light, $amount: 10);
+    }
+  }
+}
