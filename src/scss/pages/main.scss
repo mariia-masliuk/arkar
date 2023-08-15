@@ -24,11 +24,9 @@
 
   &__header {
     color: $color_white;
-    font-family: $secondFont;
-    font-size: 30px;
-    line-height: calc(60 / 30 * 100%);
-    font-weight: 400;
-
+    @media(max-width: $md4){
+      text-align: center;
+    }
   }
 
   &__info {
@@ -39,7 +37,7 @@
     line-height: calc(29 / 19 * 100%);
     @media(max-width: $md4){
       color: rgba(255, 255, 255, .9);
-
+      text-align: center;
     }
   }
 
@@ -57,6 +55,10 @@
     color: #fff;
     background-color: $color_light;
     transition: all 0.3s ease 0s;
+    @media(max-width: $md4){
+      display: flex;
+    }
+
     &:hover{
       background-color: darken($color: $color_light, $amount: 10);
     }

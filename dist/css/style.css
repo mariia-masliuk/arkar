@@ -180,6 +180,13 @@ body._lock {
   z-index: 1;
 }
 
+.title {
+  font-family: "Judson";
+  font-size: 30px;
+  line-height: 200%;
+  font-weight: 400;
+}
+
 /*-----Burger-----*/
 @media (max-width: 767.98px) {
   .header {
@@ -325,10 +332,11 @@ body._lock {
 }
 .promo__header {
   color: #fff;
-  font-family: "Judson";
-  font-size: 30px;
-  line-height: 200%;
-  font-weight: 400;
+}
+@media (max-width: 479.98px) {
+  .promo__header {
+    text-align: center;
+  }
 }
 .promo__info {
   font-family: "Julius Sans One", sans-serif;
@@ -339,6 +347,7 @@ body._lock {
 @media (max-width: 479.98px) {
   .promo__info {
     color: rgba(255, 255, 255, 0.9);
+    text-align: center;
   }
 }
 .promo__btn {
@@ -356,6 +365,85 @@ body._lock {
   background-color: #ababab;
   transition: all 0.3s ease 0s;
 }
+@media (max-width: 479.98px) {
+  .promo__btn {
+    display: flex;
+  }
+}
 .promo__btn:hover {
   background-color: #929292;
+}
+
+.about {
+  background-color: #fff;
+  padding: 30px 100px 90px 100px;
+}
+.about > *:not(:last-child) {
+  margin-bottom: 70px;
+}
+@media (max-width: 479.98px) {
+  .about > *:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 991.98px) {
+  .about {
+    padding: 30px;
+  }
+}
+.about__title {
+  text-align: center;
+}
+.about__info {
+  text-align: center;
+}
+@media (min-width: 767.98px) {
+  .about__row {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 991.98px) {
+  .about__row *:not(:last-child) {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 991.98px) and (max-width: 767.98px) {
+  .about__row *:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.about__row__column {
+  flex: 1 0 33.333%;
+}
+.about__row__item *:not(:last-child) {
+  margin: 0 auto 30px auto;
+}
+.about__logo {
+  margin: 0 auto 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #21243D;
+  width: 210px;
+  height: 210px;
+}
+.about__logo img {
+  width: 128px;
+  height: 128px;
+}
+.about__label {
+  font-family: "Judson";
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 200%;
+}
+.about__desc {
+  margin: 0 auto 30px auto;
+  text-align: center;
+  max-width: 210px;
+  font-size: 19px;
+  line-height: 152.6315789474%;
 }
